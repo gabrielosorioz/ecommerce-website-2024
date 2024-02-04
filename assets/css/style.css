@@ -183,15 +183,43 @@ input {
     margin-left: auto;
 }
 
+.nav__toggle,
+.login__toggle,
+.nav__shop {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
 
 /*=============== NAV ===============*/
 
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__toggle {
+    display: none;
+}
 
 /* Change background header */
 
 
 /* Active link */
+.active-link {
+    position:relative;
 
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    width: 5px;
+    background:var(--title-color);
+    border-radius: 50%;
+}
 
 /*=============== MAIN ===============*/
 /*========== HOME SECTION ==========*/
