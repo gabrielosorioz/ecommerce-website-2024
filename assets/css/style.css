@@ -212,7 +212,10 @@ input {
 }
 
 /* Change background header */
-
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px var(--shadow);
+}
 
 /* Active link */
 .active-link {
@@ -313,11 +316,56 @@ input {
 
 
 /* Swiper Class */
+.swiper-pagination {
+    position: initial;
+    margin-top: var(--mb-2-5);
+}
 
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background: var(--title-color);
+    opacity: 1;
+}
 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .5rem;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem;
+    height: 5px;
+    border-radius: .5rem;
+}
 
 /*=============== BUTTONS ===============*/
+.button {
+    display:inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
 
+.button:hover {
+    background: var(--first-color-alt);
+}
+
+.button__icon {
+    font-size: 1.25rem;
+}
+
+.button--link {
+    color: var(--title-color);
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+}
 
 
 /*========== DISCOUNT SECTION ==========*/
