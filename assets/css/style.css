@@ -516,7 +516,37 @@ input {
 }
 /*========== NEWSLETTER SECTION ==========*/
 
+.newsletter__container {
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+}
 
+.newsletter__description {
+    padding: 0 3rem;
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.newsletter__form {
+  background-color: var(--container-color);
+  display:  flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: .75rem;
+    
+}
+
+.newsletter__input {
+    width: 70%;
+    padding: 0 .5rem;
+    background: none;
+    color: var(--title-color);
+}
+
+.newsletter__input::placeholder {
+    color: var(--text-color);
+}
 /*=============== SHOP PAGE ===============*/
 
 
@@ -763,7 +793,12 @@ input {
 /* For medium devices */
 @media screen and (max-width: 767px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    
+    /* .new__content.swiper-slide.swiper-slide-active {
+        margin-left: 12px;
+    } */
+}
 
 /* For small devices */
 @media screen and (max-width: 320px) {}
