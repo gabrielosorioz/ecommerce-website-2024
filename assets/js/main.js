@@ -54,8 +54,31 @@ function scrollheader() {
 window.addEventListener('scroll', scrollheader) 
 
 /*=============== NEW SWIPER ===============*/
+var swiperPopular = new Swiper(".new__content-swiper", {
+  loop:true,
+  spaceBetween: 16,
+  centeredSlides: 'true',
+  slidesPerView:'auto',
+  grabCursor: true,
 
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   dynamicBullets: true,
+  // },
 
+  breakpoints: {
+
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+
+      },
+      1024: {
+        spaceBetween: 16,
+      },
+  },
+
+});
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
