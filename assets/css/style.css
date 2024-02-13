@@ -225,6 +225,7 @@ input {
 .scroll-header {
     background-color: var(--body-color);
     box-shadow: 0 1px 4px var(--shadow);
+    transition: .4s ease-in all;
 }
 
 /* Active link */
