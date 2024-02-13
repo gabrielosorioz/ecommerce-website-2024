@@ -3,7 +3,22 @@
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
+const menu = document.getElementById('nav-menu'),
+      menuClose = document.getElementById('nav-close'),
+      openMenu = document.getElementById('nav-toggle')
 
+if(menu) {
+  openMenu.addEventListener('click', () => {
+  menu.classList.add('show-menu');
+  
+  })
+}
+
+if(menuClose) {
+  menuClose.addEventListener('click',() => {
+    menu.classList.remove('show-menu');
+  })
+}
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
@@ -14,22 +29,47 @@
 
 /*===== CART SHOW =====*/
 /* Validate if constant exists */
+const cart = document.getElementById('cart'),
+      cartShop = document.getElementById('cart-shop'),
+      cartClose = document.getElementById('cart-close')
 
 
 /*===== CART HIDDEN =====*/
 /* Validate if constant exists */
+if(cartShop) {
+  cartShop.addEventListener('click', () => {
+    cart.classList.add('show-cart')
+  })
+}
 
-
+if (cartClose) {
+  cartClose.addEventListener("click", () => {
+    cart.classList.remove('show-cart');
+  });
+}
 /*=============== SHOW LOGIN ===============*/
 
 
 /*===== LOGIN SHOW =====*/
 /* Validate if constant exists */
-
+const login = document.getElementById('login'),
+      loginToggle = document.getElementById('login-toggle'),
+      loginClose = document.getElementById('login-close')
 
 /*===== LOGIN HIDDEN =====*/
 /* Validate if constant exists */
 
+if(loginToggle) {
+  loginToggle.addEventListener('click', () => {
+  login.classList.add("show-login");
+  });
+}
+
+if(loginClose) {
+  loginClose.addEventListener("click", () => {
+    login.classList.remove('show-login');
+  });
+}
 
 /*=============== HOME SWIPER ===============*/
 var Homeswiper = new Swiper(".home-swiper", {
@@ -61,26 +101,17 @@ var swiperPopular = new Swiper(".new__content-swiper", {
   slidesPerView:'auto',
   grabCursor: true,
 
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   dynamicBullets: true,
-  // },
-
-  breakpoints: {
-
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-
-      },
-      1024: {
-        spaceBetween: 16,
-      },
-  },
+ 
 
 });
 /*=============== SHOW SCROLL UP ===============*/ 
+function scrollUp(){
+  const scrollUp = document.getElementById('scroll-up');
+  // when the scroll is higher than 350 viewport heihgt, add the show-scroll class to a tag eith scrollup
 
+  if(this.scrollY >= 350) scrollUp.classList.add("show-scroll"); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp);
 
 /*=============== LIGHT BOX ===============*/
 
