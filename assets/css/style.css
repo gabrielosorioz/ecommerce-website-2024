@@ -146,6 +146,7 @@ input {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    transition: .4s ease-in-out all;
 }
 
 /*=============== NAV ===============*/
@@ -1045,8 +1046,10 @@ input {
     }
 
     .nav {
-        height: var(--header-height);
+        /* height: var(--header-height); */
+        height: calc(var(--header-height) + .75rem)
     }
+
 
 
     .nav__menu {
@@ -1074,13 +1077,20 @@ input {
     .nav__close {
         display: block;
     }
+    
     .home__content {
         padding: 0;
         grid-template-columns: 1fr;
         row-gap: 1rem;
     }
 
-    .home__group
+    .scroll-header {
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .home__group{
+        margin-top: 2.5rem;
+    }
 
     .home__img {
         padding: 1rem;
