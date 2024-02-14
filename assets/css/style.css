@@ -1047,7 +1047,7 @@ input {
 
     .nav {
         /* height: var(--header-height); */
-        height: calc(var(--header-height) + .75rem)
+        height: calc(var(--header-height) + .30rem)
     }
 
 
@@ -1089,7 +1089,7 @@ input {
     }
 
     .home__group{
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
 
     .home__img {
