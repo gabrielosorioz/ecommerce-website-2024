@@ -1193,6 +1193,26 @@ input {
         grid-template-columns: repeat(2,1fr);
         row-gap: 2rem;
     }
+
+    .shop__container {
+        grid-template-columns: 1.6fr 3.4fr ;
+    }
+
+    .shop__content {
+        padding: 2rem .25rem 1.5rem .25rem;
+        border-radius: .75rem;
+    }
+
+    .shop__img {
+        width: 120px;
+
+    }
+
+    .shop__img,
+    .shop__subtitle {
+        font-size: var(--normal-font-size);
+
+    }
 }
 
 /* For medium devices */
@@ -1299,6 +1319,20 @@ input {
         margin-top: 4.5rem;
     }
 
+    .shop__container {
+        grid-template-columns: 520px;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    .footer__content {
+        justify-self: center;
+        width: 165px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1333,6 +1367,57 @@ input {
     .login,
     .cart { width: 100%;}
   
+    .footer__container {
+        justify-items: start;
+    }
+
+    .shop__container {
+        grid-template-columns: 1fr;   
+    }
+
+    .shop__img {
+        max-height: 120px;
+    }
+
+    .shop__title {
+        font-size: var(--normal-font-size);
+        padding: 0 .3rem;
+    }
+
+    .shop__tag {
+        top: 5%;
+        font-size: .65rem;
+        padding: .25rem  .25rem;
+    }
+
+    .sidebar {
+        padding: 1.25rem 1.4rem;
+    }
+
+    .shop__button {
+        padding: .35rem;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        margin-right: var(--mb-1-5);
+    }
+
+    .pagination span {
+        height: 1.8rem;
+        width: 1.8rem;
+        line-height: 30px;
+    }
+
+    .pagination {
+        column-gap: .4rem;
+    }
+
+
+
+
+  
 }
 
 /* For small devices */
@@ -1363,5 +1448,19 @@ input {
         .steps__card {
             padding: 1.5rem;
         }
+
+        .shop__container {
+            grid-template-columns: 1fr;
+        }
+
+        .shop__items {
+            grid-template-columns: 1fr;
+        }
+
+        .pagination span {
+            font-size: var(--small-font-size);
+        }
+
+       
     }
 }
